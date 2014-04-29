@@ -21,5 +21,5 @@ if [ $? -eq 0 ]
 then
 rm -rf $AIDEDIR/*
 exit
-else "AIDE Daily Integrity Check for system $HOSTNAME has failed to upload." | mail -s "AIDE $HOSTNAME Upload Failure" -r $NOREPLY $SYSADMINS
+else "AIDE Daily Integrity Check for system $HOSTNAME has failed to upload." | mail -s "AIDE Upload Failure - $HOSTNAME" -r $NOREPLY $SYSADMINS
 fi
