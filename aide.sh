@@ -6,7 +6,7 @@ S3DIR=s3://nara-logs/aidechecks
 DATE=$(date +"%m%d%y")
 AIDEDIR=/aidechecks
 
-
+#TESTENTRY1
 /usr/sbin/aide --check > $AIDEDIR/aidecheck.out
 sleep 3m
 cd $AIDEDIR
