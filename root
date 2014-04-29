@@ -1,0 +1,5 @@
+@reboot /etc/init.d/sshd restart
+0 20 * * * sh /root/gitupdate.sh
+0 21 * * * chmod 755 /root/scripts/*.sh
+0 0 * * * sh /root/scripts/aide.sh
+0 3 * * * yum update -y
